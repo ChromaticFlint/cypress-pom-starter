@@ -46,10 +46,10 @@ When working with multiple environments of test it is helpful to quickly be able
 2. Adjust the `--config baseUrl=<URL>` to the application of test.
 3. Adjust the script accordingly, all scripts are run with `npm run <SCRIPTNAME>` _see examples from the **getting cypress running** section_
 
-#### SSO - Specifically Onelogin with a seperate step between username and password entry (I don't recommend this)
+#### SSO - Specifically Onelogin with a separate step between username and password entry (I don't recommend this)
 - Manually identify in you application if you require the following:
   - SSO Authentication, where the SSO service doesn't have an API.
-    - Use `cy.request()` to authentiate the the SSO API
+    - Use `cy.request()` to authenticate the the SSO API
   - SSO Authetnication, where the SSO service has multiple steps in the log in process
     - Use a combination of postman to identify the payload needed to login, and then use `cy.request()` to submit the request.
   - SSO Authentication, where the authentication URL is outside of the base domain of test.
@@ -88,10 +88,10 @@ When working with multiple environments of test it is helpful to quickly be able
 
 ## Getting started with writing tests
 ### Structure 
-- The Cypress automation code organization is leveraging a class inheiritance page object model structure.
+- The Cypress automation code organization is leveraging a class inheritance page object model structure.
   - The Base page object is located within `<root>/cypress/page-objects/base.ts`
     - This page object will contain all of the global methods that are required by any page object. The goal of these methods is to extent Cypress' functionality to be easier and debateably faster to write.
-  - All page-object will inheirit from the base page object and be located within the page-objects folder located at `<root>/cypress/page-objects`
+  - All page-object will inherit from the base page object and be located within the page-objects folder located at `<root>/cypress/page-objects`
     - These page objects will contain the methods to interact with the application corresponding with each page within the application.
     - In each page object will manage and contain all of the selectors and ids for the page elements that would exist on a given page.
     - Example page-objects in default suite. `/cypress/page-objects/landing-page.ts`, `/cypress/page-objects/checkboxes.ts`
@@ -103,4 +103,4 @@ When working with multiple environments of test it is helpful to quickly be able
 
 ## Contributing
 
-Contributions to this repository is concouraged and appreciated. If you would like to please create a fork of the repo and submit a PR, or submit and issue. Thank you.
+Contributions to this repository is encouraged and appreciated. If you would like to please create a fork of the repo and submit a PR, or submit and issue. Thank you.
