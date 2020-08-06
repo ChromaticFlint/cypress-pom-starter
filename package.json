@@ -1,0 +1,24 @@
+{
+  "name": "cypress-pom-starter",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "cypress:local": "node_modules/.bin/cypress open --config baseUrl=https://localhost:4200/this_is_an_example --env target=0",
+    "cypress:local:headless": "node_modules/.bin/cypress run --config baseUrl=https://localhost:4200/this_is_an_example --env target=0  --spec",
+    "cypress:staging": "node_modules/.bin/cypress open --config baseUrl=https://staging.the-internet.herokuapp.com/this_is_an_example --env target=1",
+    "cypress:staging:headless": "node_modules/.bin/cypress run --config baseUrl=https://staging.the-internet.herokuapp.com/this_is_an_example --env target=1",
+    "cypress:prod": "node_modules/.bin/cypress open --config baseUrl=https://the-internet.herokuapp.com/ --env target=2",
+    "cypress:prod:headless": "node_modules/.bin/cypress run --config baseUrl=https://the-internet.herokuapp.com/ --env target=2"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^4.12.0",
+    "puppeteer": "^5.2.1",
+    "typescript": "^3.9.7"
+  },
+  "dependencies": {}
+}

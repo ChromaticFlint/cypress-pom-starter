@@ -1,0 +1,10 @@
+# Directories
+node_modules/
+cypress/videos/
+cypress/screenshots/
+
+# Sensitive Files
+cypress.env.json
+
+# Unwanted Files
+.DS_Store
