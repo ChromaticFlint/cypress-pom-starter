@@ -1,3 +1,4 @@
 {
-  "baseUrl": "https://localhost:4200/this_is_an_example"
+  "baseUrl": "https://localhost:4200/this_is_an_example",
+  "include": ["integration/*.ts", "support/*.ts", "../node_modules/cypress"]
 }

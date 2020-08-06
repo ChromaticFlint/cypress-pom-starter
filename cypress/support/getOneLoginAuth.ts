@@ -1,10 +1,11 @@
 const puppeteer = require('puppeteer')
 
-exports.getOneLoginAuth = async function getAuthToken(userObject) {
+// fix the type: any that was used when convering to ts
+exports.getOneLoginAuth = async function getAuthToken(userObject: any) {
   const { email, password, url, auth_url } = userObject;
   const credentials = await puppeteer
     .launch( { headless: true })
-    .then(async browser => {
+    .then(async (browser: any) => {
       try {
       let page = await browser.newPage();
       

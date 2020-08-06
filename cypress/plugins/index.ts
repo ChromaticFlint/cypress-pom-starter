@@ -12,10 +12,11 @@
 // the project's config changing)
 const { getOneLoginAuth } = require('../support/getOneLoginAuth')
 
+// fix the type: any that was used when convering to ts
 /**
  * @type {Cypress.PluginConfig}
  */
-module.exports = (on, config) => {
+module.exports = (on: any, config: any) => {
   // `on` is used to hook into various events Cypress emits
   // `config` is the resolved Cypress config
   on('task', {
