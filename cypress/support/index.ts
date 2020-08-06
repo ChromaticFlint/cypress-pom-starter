@@ -32,7 +32,7 @@ import './commands'
 
 // Enable if you need to set Puppeteer Local Storage to Cypress' Local Storage with getOneLoginAuth
 // beforeEach(() => {
-//   const authentication = Cypress.env('AuthenticationTokens')
+//   const authentication: JSON = Cypress.env('AuthenticationTokens')
 //   for (let [key, value] of Object.entries(authentication)) {
 //     localStorage.setItem(key, value)
 //   }
