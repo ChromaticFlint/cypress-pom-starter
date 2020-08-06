@@ -15,6 +15,9 @@
   - Recommendation: [VS Code](https://code.visualstudio.com/)
 
 ## Getting Cypress Running
+- Git clone the repo using `git clone https://github.com/ChromaticFlint/cypress-pom-starter`
+- Navigate into the repo root directory.
+- Install the dependencies with `npm install`
 - In the project root, make a copy of `cypress.env.json` and name it `cypress.env-example.json`.
 - Start Cypress for the environment of test that you would like to interact with the following scripts based on the `package.json` scripts:
   - Running Local with the UI: `npm run cypress:local`
@@ -23,7 +26,8 @@
   - Running Staging headlessly: `npm run cypress:staging:headless`
   - Running Prod with the UI: `npm run cypress:prod`
   - Running Prod with headlessly: `npm run cypress:prod:headless`
-4. Launch your tests from the Cypress test runner if you used the UI, or observe the test running headless within the command line interface.
+- Launch your tests from the Cypress test runner if you used the UI, or observe the test running headlessly within the command line interface.
+  - By default if you run `npm run cypress:prod` the `https://the-internet.herokuapp.com/` test should run successfully if everything is configured appropriately.
 
 ## Configuring Cypress Credentials and Environments
 
