@@ -99,11 +99,11 @@ When working with multiple environments of test it is helpful to quickly be able
     - These page objects will contain the methods to interact with the application corresponding with each page within the application.
     - In each page object will manage and contain all of the selectors and ids for the page elements that would exist on a given page.
     - Example page-objects in default suite. `/cypress/page-objects/landing-page.ts`, `/cypress/page-objects/checkboxes.ts`
-- The integration folder will contain all of our tests.
-  - the integration folder is located at `<root>/cypress/integration`
-  - the integration folder is formatted almost identically to the page-objects model folder so, there is a corresponding director for the compass and atlas application.
-  - Example test files in default suite. `/cypress/integration/landing-page.spec.ts`, `/cypress/integration/checkboxes.spec.ts`
-  - Each individual page will have a `spec.ts` file within the appropriate integration folder _if the application is large, it might be helpful to start organizating the spec files per section of the application_. This spec file should contain all of tests that occur for that specific page.
+  - The integration folder will contain all of our tests.
+    - the integration folder is located at `<root>/cypress/integration`
+    - the integration folder is formatted almost identically to the page-objects model folder so, there is a corresponding director for the compass and atlas application.
+    - Example test files in default suite. `/cypress/integration/landing-page.spec.ts`, `/cypress/integration/checkboxes.spec.ts`
+    - Each individual page will have a `spec.ts` file within the appropriate integration folder _if the application is large, it might be helpful to start organizating the spec files per section of the application_. This spec file should contain all of tests that occur for that specific page.
 
 ## Contributing
 
