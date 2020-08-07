@@ -16,7 +16,7 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "cypress": "^4.12.0",
+    "cypress": "^4.12.1",
     "puppeteer": "^5.2.1",
     "typescript": "^3.9.7"
   },

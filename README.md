@@ -107,4 +107,4 @@ When working with multiple environments of test it is helpful to quickly be able
 
 ## Contributing
 
-Contributions to this repository is encouraged and appreciated. If you would like to please create a fork of the repo and submit a PR, or submit and issue. Thank you.
+Contributions to this repository is encouraged and appreciated. If you would like to please create a fork of the repo and submit a PR, or submit an issue. Thank you.
