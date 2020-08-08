@@ -10,13 +10,23 @@
     "cypress:staging": "node_modules/.bin/cypress open --config baseUrl=https://staging.the-internet.herokuapp.com/this_is_an_example --env target=1",
     "cypress:staging:headless": "node_modules/.bin/cypress run --config baseUrl=https://staging.the-internet.herokuapp.com/this_is_an_example --env target=1",
     "cypress:prod": "node_modules/.bin/cypress open --config baseUrl=https://the-internet.herokuapp.com/ --env target=2",
-    "cypress:prod:headless": "node_modules/.bin/cypress run --config baseUrl=https://the-internet.herokuapp.com/ --env target=2"
+    "cypress:prod:headless": "node_modules/.bin/cypress run --config baseUrl=https://the-internet.herokuapp.com/ --env target=2",
+    "check": "gts check",
+    "clean": "gts clean",
+    "compile": "tsc",
+    "fix": "gts fix",
+    "prepare": "npm run compile",
+    "pretest": "npm run compile",
+    "posttest": "npm run check"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@types/node": "^13.11.1",
     "cypress": "^4.12.1",
+    "eslint-plugin-cypress": "^2.11.1",
+    "gts": "^2.0.2",
     "puppeteer": "^5.2.1",
     "typescript": "^3.9.7"
   },

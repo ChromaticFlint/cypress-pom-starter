@@ -10,7 +10,7 @@
 
 // This function is called when a project is opened or re-opened (e.g. due to
 // the project's config changing)
-const { getOneLoginAuth } = require('../support/getOneLoginAuth')
+const {getOneLoginAuth} = require('../support/getOneLoginAuth');
 
 // fix the type: any that was used when convering to ts
 /**
@@ -20,6 +20,6 @@ module.exports = (on: any, config: any) => {
   // `on` is used to hook into various events Cypress emits
   // `config` is the resolved Cypress config
   on('task', {
-    getOneLoginAuth
-  })
-}
+    getOneLoginAuth,
+  });
+};
