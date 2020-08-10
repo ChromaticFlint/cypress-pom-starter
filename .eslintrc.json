@@ -5,5 +5,11 @@
     "mocha": true,
     "cypress/globals": true
   },
-  "plugins": ["cypress"]
+  "plugins": [
+    "cypress"
+  ],
+  "rules": {
+    "quotes": [2, "single", "avoid-escape"],
+    "prettier.singleQuote": true
+  }
 }
